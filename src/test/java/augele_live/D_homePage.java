@@ -1,0 +1,40 @@
+package augele_live;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+public class D_homePage {
+	@FindBy(xpath = "//img[@src=\"https://augelnotfall.blob.core.windows.net/static/logo.png\"]")
+	private WebElement augelImage;
+	@FindBy(xpath = "//select[@name=\"data[app_type]\"]")
+	private WebElement languageButton;
+	// @FindBy(xpath="")private WebElement ;
+	// @FindBy(xpath="")private WebElement ;
+	// @FindBy(xpath="")private WebElement ;
+	// @FindBy(xpath="")private WebElement ;
+	// @FindBy(xpath="")private WebElement ;
+	// @FindBy(xpath="")private WebElement ;
+	// @FindBy(xpath="")private WebElement ;
+	// @FindBy(xpath="")private WebElement ;
+
+	public D_homePage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+
+	public void langChange(WebDriver driver) throws Throwable {
+		Select se = new Select(languageButton);
+		se.selectByVisibleText("English");
+		//Thread.sleep(3000);
+
+	}
+
+	public void backToHomePage(WebDriver driver) throws Throwable {
+		augelImage.click();
+		//Thread.sleep(3000);
+
+	}
+
+}

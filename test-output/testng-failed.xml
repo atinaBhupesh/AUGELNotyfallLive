@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="augele_live.AA_testClass_delete">
+        <methods>
+          <include name="deleteCheckList"/>
+          <include name="deleteVehicleUser"/>
+          <include name="deleteARFromHistory"/>
+          <include name="deleteChatGroup"/>
+          <include name="deleteTestAlarmFromList"/>
+          <include name="backToHomePage2"/>
+          <include name="lounchBrowser"/>
+          <include name="deleteManualAlarm"/>
+          <include name="deleteAlarmTemplate"/>
+          <include name="backToHomePage"/>
+          <include name="deleteCalendarEventCreatedByAttribute"/>
+          <include name="deleteCalendarEventCreatedByResource"/>
+          <include name="deleteResource"/>
+          <include name="deleteUers"/>
+          <include name="deleteAttribute"/>
+          <include name="deleteAlarmLoop"/>
+          <include name="delteInfoEvent"/>
+          <include name="logOut"/>
+          <include name="deletePermissionGroup"/>
+          <include name="deleteCalendarEventCreatedByFirefighter"/>
+          <include name="deleteARFromList"/>
+          <include name="deleteFireStation"/>
+          <include name="deactiveManualAlarm"/>
+          <include name="deleteEventCategory"/>
+        </methods>
+      </class> <!-- augele_live.AA_testClass_delete -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
